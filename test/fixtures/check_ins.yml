@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  metric: one
+  value: 9.99
+  sets: 1
+  reps: 1
+  weight: 9.99
+  notes: MyText
+  checked_in_on: 2026-01-06
+
+two:
+  metric: two
+  value: 9.99
+  sets: 1
+  reps: 1
+  weight: 9.99
+  notes: MyText
+  checked_in_on: 2026-01-06

@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fitness_goal: one
+  name: MyString
+  unit: MyString
+  metric_type: MyString
+  target_value: 9.99
+  sets: 1
+  reps: 1
+  weight: 9.99
+
+two:
+  fitness_goal: two
+  name: MyString
+  unit: MyString
+  metric_type: MyString
+  target_value: 9.99
+  sets: 1
+  reps: 1
+  weight: 9.99

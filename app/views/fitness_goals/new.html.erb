@@ -1,0 +1,15 @@
+<h1>New Fitness Goal</h1>
+
+<%= form_with model: @fitness_goal do |f| %>
+  <p>
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </p>
+
+  <%= f.submit "Create Goal" %>
+<% end %>

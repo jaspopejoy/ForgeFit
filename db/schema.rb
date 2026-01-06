@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_01_06_183546) do
+ActiveRecord::Schema[8.1].define(version: 2026_01_06_192835) do
   create_table "check_ins", force: :cascade do |t|
     t.date "checked_in_on"
     t.datetime "created_at", null: false
@@ -31,8 +31,6 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_06_183546) do
     t.string "status"
     t.date "target_date"
     t.datetime "updated_at", null: false
-    t.integer "user_id", null: false
-    t.index ["user_id"], name: "index_fitness_goals_on_user_id"
   end
 
   create_table "metrics", force: :cascade do |t|
@@ -57,6 +55,5 @@ ActiveRecord::Schema[8.1].define(version: 2026_01_06_183546) do
   end
 
   add_foreign_key "check_ins", "metrics"
-  add_foreign_key "fitness_goals", "users"
   add_foreign_key "metrics", "fitness_goals"
 end

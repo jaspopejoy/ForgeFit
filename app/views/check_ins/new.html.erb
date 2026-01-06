@@ -1,0 +1,30 @@
+<h2>New Check-In</h2>
+
+<%= form_with model: [@fitness_goal, @metric, @check_in] do |f| %>
+  <p>
+    <%= f.label :checked_in_on %><br>
+    <%= f.date_field :checked_in_on %>
+  </p>
+
+  <p>
+    <%= f.label :value %><br>
+    <%= f.number_field :value %>
+  </p>
+
+  <p>
+    <%= f.label :sets %><br>
+    <%= f.number_field :sets %>
+  </p>
+
+  <p>
+    <%= f.label :reps %><br>
+    <%= f.number_field :reps %>
+  </p>
+
+  <p>
+    <%= f.label :weight %><br>
+    <%= f.number_field :weight %>
+  </p>
+
+  <%= f.submit %>
+<% end %>

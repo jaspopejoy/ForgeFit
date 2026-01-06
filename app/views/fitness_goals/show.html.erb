@@ -1,0 +1,11 @@
+<h1><%= @fitness_goal.name %></h1>
+
+<%= link_to "Add Metric", new_fitness_goal_metric_path(@fitness_goal) %>
+
+<ul>
+  <% @fitness_goal.metrics.each do |metric| %>
+    <li>
+      <%= link_to metric.name, [@fitness_goal, metric] %>
+    </li>
+  <% end %>
+</ul>

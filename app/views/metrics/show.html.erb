@@ -1,0 +1,13 @@
+<h2><%= @metric.name %></h2>
+
+<%= link_to "New Check-In",
+    new_fitness_goal_metric_check_in_path(@fitness_goal, @metric) %>
+
+<ul>
+  <% @metric.check_ins.each do |check| %>
+    <li>
+      <%= check.checked_in_on %> —
+      <%= check.value || "#{check.sets}x#{check.reps} @ #{check.weight}" %>
+    </li>
+  <% end %>
+</ul>
